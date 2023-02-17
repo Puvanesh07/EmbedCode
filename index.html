@@ -1,0 +1,60 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    >
+      <script src="https://kit.fontawesome.com/1234567890.js" crossorigin="anonymous">
+    </script>
+    <script
+      src="https://kit.fontawesome.com/13589589f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+  <body>
+    <model-viewer
+      id="model_viewer"
+      src="https://puvanesh07.github.io/Interaktive_Files/Westcoast.glb"
+      alt="A 3D model"
+      width="100%"
+      preload
+      ar
+      ar-modes="scene-viewer quick-look webxr"
+      environment-image="neutral"
+      shadow-intensity="0.97"
+      exposure="2"
+      auto-rotate
+      interaction-prompt="auto"
+      camera-controls
+      autoplay="true"
+      quick-look-browsers="safari chrome"
+      autoplay
+      camera-orbit="0deg 75deg auto"
+      min-field-of-view="10deg"
+      max-field-of-view="100deg"
+      min-camera-orbit="auto 0deg 80%"
+      max-camera-orbit="auto 180deg 100%"
+    >
+    </model-viewer>
+
+    <button id="generate-code-btn"><i class="fas fa-code"></i>View Code</button>
+    <div id="embed-code-container">
+      <div id="embed-code-wrapper">
+        <button id="close-btn"><i class="fa fa-times"></i></button>
+        <textarea id="embed-code" readonly></textarea>
+        <div id="copy-wrapper">
+          <button id="copy-btn">Copy <i class="fas fa-copy"></i></button>
+
+          <div id="success-msg">Copied!</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
